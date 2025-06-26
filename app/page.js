@@ -1,8 +1,8 @@
-import Hero from "./_components/hero"
+import Hero1 from "./_components/hero1"
 export default function Page() {
   return (  
-  <div className="w-full h-full">
-    <Hero/>
+  <div >
+    <Hero1/>
   </div>)
 
 }
