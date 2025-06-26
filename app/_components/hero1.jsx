@@ -39,7 +39,7 @@ export default function Hero1() {
           {["qr1", "qr2", "qr3"].map((name) => (
             <Image
               key={name}
-              src={`/${name}.svg`}
+              src={`/${name}.png`}
               alt={name}
               width={300}
               height={300}
@@ -64,7 +64,7 @@ export default function Hero1() {
           {["ql1", "ql2", "ql3"].map((name) => (
             <Image
               key={name}
-              src={`/${name}.svg`}
+              src={`/${name}.png`}
               alt={name}
               width={300}
               height={300}
