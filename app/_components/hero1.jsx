@@ -22,6 +22,7 @@ export default function Hero1() {
           width={1920}
           height={1080}
           className="w-full h-auto object-contain"
+          priority
         />
       </div>
 
@@ -54,7 +55,7 @@ export default function Hero1() {
             alt="product"
             width={80} // ลดขนาดเพื่อป้องกันล้นจอ
             height={500}
-            className="-rotate-8 object-contain max-w-full h-auto"
+            className="-rotate-8 object-contain max-w-full h-auto w-auto"
           />
         </div>
 
