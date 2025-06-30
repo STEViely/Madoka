@@ -10,14 +10,9 @@ export default function Hero() {
           fill
           className="object-cover backface-hidden "
         />
-        <div className="absolute pt-4 inset-0 flex items-center justify-center z-10">
-          <Image
-            src="/productWithLeter.png"
-            alt="product"
-            width={340}
-            height={200}
-            className=""
-          />
+        <div className="absolute flex items-center justify-center z-10">
+          <Image src="/product45degree.png" width={50} height={50} />
+          <title>DOG & CAT PERFUME</title>
         </div>
         <div className="absolute inset-0 flex items-end justify-center z-10">
           <p className="text-[8px] text-white">

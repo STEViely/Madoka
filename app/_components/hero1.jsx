@@ -4,7 +4,8 @@ export default function Hero1() {
   return (
     <div className="flex flex-col w-full overflow-x-hidden">
       {/* Section 1 */}
-      <div className="w-full -mb-px">
+      <div className="relative w-full">
+        {/* A: พื้นหลัง */}
         <Image
           src="/bg1.svg"
           alt="background1"
@@ -12,6 +13,27 @@ export default function Hero1() {
           height={1080}
           className="w-full h-auto object-contain"
         />
+
+        {/* B + C: อยู่ตรงกลางภาพพื้นหลังเสมอ */}
+        <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+          <div className="flex  items-center gap-4">
+            <Image
+              src="/product45degree.png"
+              width={45}
+              height={45}
+              alt="Product"
+              className=" drop-shadow-2xl"
+            />
+            <div>
+              <h1 className="text-4xl md:text-5xl text-[#7492AA]  text-right px-4 py-2 font-bold">
+                DOG & CAT
+              </h1>
+              <h1 className="text-4xl md:text-5xl text-[#D66C5E]  text-right px-4 py-2 font-bold">
+                PERFUME
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Section 2 */}
