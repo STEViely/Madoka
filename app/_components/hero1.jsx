@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Hero1() {
   return (
-    <div className="flex flex-col w-full overflow-x-hidden">
+    <div className="flex flex-col w-full overflow-x-hidden ">
       {/* Section 1 */}
-      <div className="relative w-full">
+      <div className="relative w-full -mb-px">
         {/* A: พื้นหลัง */}
         <Image
           src="/bg1.svg"
@@ -38,14 +38,29 @@ export default function Hero1() {
 
       {/* Section 2 */}
       <div className="w-full -mb-px">
-        <Image
-          src="/bg2.svg"
-          alt="background2"
-          width={1920}
-          height={1080}
-          className="w-full h-auto object-contain"
-          priority
-        />
+        <div className="relative w-full -mb-px">
+          <Image
+            src="/bg2.svg"
+            alt="background2"
+            width={1920}
+            height={1080}
+            className="w-full h-auto object-contain"
+            priority
+          />
+          <div className="absolute inset-0 flex justify-center items-center pointer-events-none p-10">
+            <div className="w-[50%]"></div>
+            <div className="w-[50%] text-white">
+              <p>
+                สเปย์อาบแห้งพร้อมน้ำหอมกลิ่น Golden Siren ช่วยทำให้ขนฟูนุ่ม
+                หอมสดชื่น โดยไม่ต้องใช้น้ำล้างออก
+                ใช้ได้ทั้งสุนัขแลพเเมวทุกสายพันธุ์ ใช้ง่าย ปลอดภัย
+                ไร้สารเคมีที่ทำให้เกิดการระคายเคืองต่อผิวหนัง
+                ไม่ก่อให้เกิดอาการเเพ้เเละ ยัง ช่วยลดการสะสมของเชื้อรา ยีส์
+                และเเบคทีเรีย
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Section 3 */}
